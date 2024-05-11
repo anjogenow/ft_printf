@@ -6,7 +6,7 @@
 #    By: agenow <agenow@student.42berlin.de>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/06 13:00:59 by agenow            #+#    #+#              #
-#    Updated: 2024/05/06 13:01:39 by agenow           ###   ########.fr        #
+#    Updated: 2024/05/11 13:29:13 by agenow           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,11 +15,9 @@ OBJS            = $(SRCS:.c=.o)
 CC		= cc
 RM		= rm -f
 CFLAGS		= -Wall -Wextra -Werror
-NAME		= printf.a
+NAME		= libftprintf.a
 all: $(NAME)
-$(NAME): $(OBJS)
-		$(CC) $(CFLAGS) -c $(SRCS)
-		ar rcs $(NAME) $(OBJS)
+	$(CC) $(CFLAGS) $(SRS) -o $(NAME)
 clean:
 		$(RM) $(OBJS)
 fclean: clean
