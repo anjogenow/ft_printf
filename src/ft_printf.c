@@ -6,29 +6,11 @@
 /*   By: agenow <agenow@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 13:16:54 by agenow            #+#    #+#             */
-/*   Updated: 2024/05/12 13:36:56 by agenow           ###   ########.fr       */
+/*   Updated: 2024/05/12 13:56:52 by agenow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
-/*
-int	main()
-{
-	int	len;
-
-	len = ft_printf("Hallo %s\n", "Henni");
-	ft_printf("Length %d\n", len);
-	ft_printf("%%c: %c\n", 'j');
-	ft_printf("%%d: %d\n", 20);
-	ft_printf("%%i: %i\n", 22);
-	ft_printf("%%u: %u\n", 500);
-	ft_printf("%%x: %x\n", 42);
-	ft_printf("%%X: %X\n", 42);
-	ft_printf("%%p: %p\n", "Hello");
-	return(0);
-}
-*/
 
 int	ft_printf(const char *str, ...)
 {
