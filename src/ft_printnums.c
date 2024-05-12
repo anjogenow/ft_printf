@@ -6,19 +6,17 @@
 /*   By: agenow <agenow@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/11 12:48:16 by agenow            #+#    #+#             */
-/*   Updated: 2024/05/11 13:25:50 by agenow           ###   ########.fr       */
+/*   Updated: 2024/05/12 14:09:51 by agenow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printnbr(int n)
+int	ft_printnbr(size_t nbr)
 {
-	long	nbr;
 	int		count;
 
 	count = 0;
-	nbr = (long) n;
 	if (nbr < 0)
 	{
 		nbr = -nbr;
@@ -30,7 +28,7 @@ int	ft_printnbr(int n)
 	return (count);
 }
 
-int	ft_printuint(unsigned int n)
+int	ft_printuint(size_t n)
 {
 	int	count;
 
