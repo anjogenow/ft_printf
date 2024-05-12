@@ -6,13 +6,13 @@
 /*   By: agenow <agenow@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/11 12:56:31 by agenow            #+#    #+#             */
-/*   Updated: 2024/05/11 13:25:17 by agenow           ###   ########.fr       */
+/*   Updated: 2024/05/12 13:36:22 by agenow           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printshex(unsigned int n)
+int	ft_printshex(unsigned long long n)
 {
 	char	*base;
 	int		count;
@@ -25,7 +25,7 @@ int	ft_printshex(unsigned int n)
 	return (count);
 }
 
-int	ft_printlhex(unsigned int n)
+int	ft_printlhex(unsigned long long n)
 {
 	char	*base;
 	int		count;
@@ -40,6 +40,9 @@ int	ft_printlhex(unsigned int n)
 
 int	ft_printptr(unsigned long long n)
 {
-	(void) n;
-	return (1);
+	int	count;
+
+	count = ft_printf("0x");
+	count += ft_printf("%x", n);
+	return (count);
 }
